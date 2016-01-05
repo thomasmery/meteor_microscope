@@ -1,15 +1,23 @@
 export default App = React.createClass({
 
+	mixins: [ReactMeteorData],
 	propTypes: {
 
 		posts: React.PropTypes.array
 
 	},
 
+	getMeteorData () {
+
+		return {
+			posts: Posts.find().fetch()
+		};
+
+	},
 
 	render () {	
 
-		var items = this.props.posts.map((item) => { return <Post data={item} /> }); 
+		var items = this.data.posts.map((item) => { return <Post data={item} /> }); 
 		return (
 			<div className="posts page">
 				{items}

@@ -12,8 +12,8 @@ export default Post = React.createClass({
 
 		return ( 
 
-			<div class="post">
-			    <div class="post-content">
+			<div className="post">
+			    <div className="post-content">
 			      <h3><a href={url}>{title}</a><span>{domain}</span></h3>
 			    </div>
 			 </div>
