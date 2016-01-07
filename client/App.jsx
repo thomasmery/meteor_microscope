@@ -1,27 +1,23 @@
 export default App = React.createClass({
 
-	mixins: [ReactMeteorData],
-	propTypes: {
-
-		posts: React.PropTypes.array
-
-	},
-
-	getMeteorData () {
-
-		return {
-			posts: Posts.find().fetch()
-		};
-
-	},
-
 	render () {	
 
-		var items = this.data.posts.map((item) => { return <Post data={item} /> }); 
 		return (
-			<div className="posts page">
-				{items}
+			
+			<div className="container">
+				<header className="navbar navbar-default" role="navigation"> 
+					<div className="navbar-header">
+						<a className="navbar-brand" href="/">Microscope - React</a>
+					</div>
+				</header>
+				<div id="main">
+					{this.props.content}
+				</div>
+				<div id="footer">
+					<Footer />
+				</div>
 			</div>
+
 		)
 
 	}

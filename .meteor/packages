@@ -21,3 +21,4 @@ twbs:bootstrap
 underscore
 react
 meteorhacks:flow-router
+kadira:react-layout

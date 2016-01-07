@@ -14,7 +14,7 @@ export default Post = React.createClass({
 
 	render () {
 
-		var { url, title } = this.props.data;
+		var { url, title, _id } = this.props.data;
 		var domain = this.domain();
 
 		return ( 
@@ -23,6 +23,7 @@ export default Post = React.createClass({
 			    <div className="post-content">
 			      <h3><a href={url}>{title}</a><span>{domain}</span></h3>
 			    </div>
+			    <a href={FlowHelpers.pathFor('post', { _id: _id })} className="discuss btn btn-default">Discuss</a>
 			 </div>
 
 		);
