@@ -41,6 +41,7 @@ meteor@1.1.11-modules.2
 meteor-base@1.0.1
 meteor-env-dev@0.0.1-modules.2
 meteor-env-prod@0.0.1-modules.2
+meteorhacks:flow-router@1.19.0
 minifiers-css@1.1.8-modules.2
 minifiers-js@1.1.8-modules.2
 minimongo@1.0.11-modules.2
