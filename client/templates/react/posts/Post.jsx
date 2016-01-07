@@ -6,9 +6,16 @@ export default Post = React.createClass({
 
 	},
 
+	domain: function() {
+	    var a = document.createElement('a');
+	    a.href = this.props.data.url;
+	    return a.hostname;
+	},
+
 	render () {
 
-		var { url, domain, title } = this.props.data;
+		var { url, title } = this.props.data;
+		var domain = this.domain();
 
 		return ( 
 

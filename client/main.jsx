@@ -1,3 +1,6 @@
+// make posts collection subset (as defined in the server Publish call) available to the client
+Meteor.subscribe('posts','post');
+
 Meteor.startup(() => {
-	ReactDOM.render(<App posts={Posts.find().fetch()}/>,document.getElementById('main'))
+	ReactDOM.render(<App />,document.getElementById('main'))
 }); 
