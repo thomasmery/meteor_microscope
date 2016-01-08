@@ -11,6 +11,7 @@ Link = ReactRouter.Link;
 const history = ReactRouter.history.useQueries(ReactRouter.history.createHistory)();
 
 Meteor.startup(() => {
+
 	ReactDOM.render(
 		<Router history={history}>
 			<Route path="/" component={App}>
@@ -21,4 +22,5 @@ Meteor.startup(() => {
 		</Router>, 
 		document.getElementById('main')
 	);
+	
 });
