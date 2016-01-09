@@ -36,7 +36,7 @@ export default Post = React.createClass({
 		// data has not been loaded yet
 		// so we need to check if it's there
 		// Component will re-render when data has arrived
-		if(!data.post)
+		if(!postsSubscription.ready())
 			return <p>Loading...</p>;
 
 		var { _id, url, title } = data.post;
