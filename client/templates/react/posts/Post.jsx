@@ -24,14 +24,14 @@ export default Post = React.createClass({
 
 	domain: function(data) {
 	    var a = document.createElement('a');
-	    a.href = data.url;
+	    a.href = data.post.url;
 	    return a.hostname;
 	},
 
 	render () {
 
 		var data = this.props.data? this.props.data : this.data;
-		console.log(this.props);
+
 		// when we access Post with a direct request (not navigating through the app)
 		// data has not been loaded yet
 		// so we need to check if it's there

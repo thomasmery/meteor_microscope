@@ -1,3 +1,5 @@
+const { Link } = ReactRouter;
+
 export default App = React.createClass({
 
 	render () {	
@@ -9,7 +11,7 @@ export default App = React.createClass({
 
 				<nav>
 					<ul>
-						<li><Link to="/list">Posts List</Link></li>
+						<li><Link to="/posts">Posts List</Link></li>
 					</ul>
 				</nav>
 

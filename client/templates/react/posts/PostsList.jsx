@@ -20,8 +20,13 @@ export default PostsList = React.createClass({
 		var items = this.data.posts.map((item) => { return <Post data={{ post: item }} /> });
 
 		return (
-			<div className="posts page">
-				{items}
+			<div>
+				<div className="posts page">
+					{items}
+				</div>
+				<div className="content">
+					{this.props.children}
+				</div>
 			</div>
 		)
 
