@@ -14,6 +14,7 @@ Meteor.startup(() => {
 
 	ReactDOM.render(
 		<Router history={history}>
+			<Route path="/login" component={Login} />
 			<Route path="/" component={App}>
 				<IndexRoute component={Home} />
 				<Route path="posts" component={PostsList} />
