@@ -1,0 +1,29 @@
+{
+  "name": "github_microscope",
+  "version": "1.0.0",
+  "description": "Microscope is a simple social news app that lets you share links, comment, and vote on them.",
+  "main": "index.js",
+  "dependencies": {
+    "history": "^1.17.0",
+    "material-ui": "^0.14.2",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3",
+    "react-tap-event-plugin": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmery/meteor_microscope.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasmery/meteor_microscope/issues"
+  },
+  "homepage": "https://github.com/thomasmery/meteor_microscope#readme"
+}
