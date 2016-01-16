@@ -1,3 +1,6 @@
+import React from "react";
+import ReactRouter from 'react-router';
+
 const { Link } = ReactRouter;
 
 export default Logout = React.createClass({

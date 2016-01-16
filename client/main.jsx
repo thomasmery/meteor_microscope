@@ -1,14 +1,17 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, Link } from 'react-router';
+import {history} from 'history';
+
+import App from './components/App.jsx'
+import Home from './components/Home.jsx'
+import Login from './components/auth/Login.jsx'
+import PostsList from './components/posts/PostsList.jsx'
+import Post from './components/posts/Post.jsx'
+import _404 from './components/_404.jsx'
+
 // make posts collection subset (as defined in the server Publish call) available to the client
 postsSubscription = Meteor.subscribe('posts', null, null);
-
-const { Router, Route, IndexRoute, Link } = ReactRouter;
-
- //Link = ReactRouter.Link;
-
-// create history from rackt/history library : https://github.com/rackt/history
-// the useQueries usage is a way to create a history that knows how to handle URL queries 
-// https://github.com/rackt/history/blob/master/modules/useQueries.js#L26
-const history = ReactRouter.history.useQueries(ReactRouter.history.createHistory)();
 
 Meteor.startup(() => {
 

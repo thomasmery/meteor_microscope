@@ -1,4 +1,5 @@
-const { Link } = ReactRouter;
+import React from "react";
+import { ReactRouter, Link, History } from 'react-router';
 
 export default Post = React.createClass({
 
@@ -44,7 +45,7 @@ export default Post = React.createClass({
 
 		return ( 
 
-			<div className="post">
+			<div className="post test" key={_id}>
 			    <div className="post-content">
 			      <h3><a href={url}>{title}</a><span>{domain}</span></h3>
 			    </div>

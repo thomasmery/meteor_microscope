@@ -1,8 +1,11 @@
-const { Link } = ReactRouter;
+import React from "react";
+import { ReactRouter, Link, History } from 'react-router';
+
+import Header from './Header.jsx';	
 
 export default App = React.createClass({
 
-	mixins: [ReactMeteorData, ReactRouter.History],
+	mixins: [ReactMeteorData, History],
 
 	getMeteorData () {
 

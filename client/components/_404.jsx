@@ -1,3 +1,5 @@
+import React from "react";
+
 export default _404 = React.createClass({
 
 	render() {

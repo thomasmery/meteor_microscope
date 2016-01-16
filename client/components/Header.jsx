@@ -1,3 +1,5 @@
+import React from "react";
+
 export default Header = React.createClass({
 
 	propTypes: {

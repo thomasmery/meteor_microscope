@@ -1,4 +1,4 @@
-const { Link } = ReactRouter;
+import React from "react";
 
 export default Home = React.createClass({
 	
