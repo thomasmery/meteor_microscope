@@ -1,7 +1,5 @@
 Meteor.publish('posts', function(title, url) {
-
-	console.log('Publishing posts');
-
+	
 	// define default values
 	title = title?title:'.*';
 	url = url?url:'.*';
